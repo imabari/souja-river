@@ -368,7 +368,7 @@ def main() -> None:
                     past_series  = latest_series[latest_series.index <= one_hour_ago]
                     if not past_series.empty:
                         hourly_diff = latest_value - past_series.iloc[-1]
-                        delta_text  = f"{hourly_diff:+.2f} {unit}（1時間前比）"
+                        delta_text  = f"{hourly_diff:+.2f} {unit}（前回比）"
                         delta_color = "normal"
                     else:
                         delta_text  = "（1時間前データなし）"
@@ -396,7 +396,7 @@ def main() -> None:
                     past_series  = latest_series[latest_series.index <= one_hour_ago]
                     if not past_series.empty:
                         hourly_diff = latest_value - past_series.iloc[-1]
-                        delta_text  = f"{hourly_diff:+.2f} m（1時間前比）"
+                        delta_text  = f"{hourly_diff:+.2f} m（前回比）"
                         delta_color = "normal"
                     else:
                         delta_text  = "（1時間前データなし）"

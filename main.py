@@ -286,11 +286,11 @@ def make_dam_flow_figure(dam_records: pd.DataFrame) -> go.Figure:
 # ─────────────────────────────────────────
 def main() -> None:
     st.set_page_config(
-        page_title="蒼社川・玉川ダム モニター",
+        page_title="玉川ダム・蒼社川 モニター",
         page_icon="🌊",
         layout="wide",
     )
-    st.title("🌊 蒼社川・玉川ダム モニター")
+    st.title("🌊 玉川ダム・蒼社川 モニター")
 
     # ── サイドバー ────────────────────────
     with st.sidebar:

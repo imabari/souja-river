@@ -249,6 +249,7 @@ def make_dam_figure(dam_records: pd.DataFrame, metric: str, y_label: str) -> go.
         title=f"玉川ダム {metric}",
         xaxis_title="日時",
         yaxis_title=y_label,
+        yaxis=dict(rangemode="tozero"),
         hovermode="x unified",
         height=350,
     )
@@ -275,6 +276,7 @@ def make_dam_flow_figure(dam_records: pd.DataFrame) -> go.Figure:
         title="玉川ダム 流入量・放流量",
         xaxis_title="日時",
         yaxis_title="流量 (m³/s)",
+        yaxis=dict(rangemode="tozero"),
         hovermode="x unified",
         height=350,
     )

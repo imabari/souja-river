@@ -27,7 +27,7 @@ RIVER_URL = (
 )
 DAM_URL = (
     "http://183.176.244.72/kawabou-mng/customizeMyMenuKeika.do"
-    "?GID=05-5101&userId=U1001&myMenuId=U1001_MMENU003&PG=1&KTM=2"
+    "?GID=05-5101&userId=U1001&myMenuId=U1001_MMENU003&PG=1&KTM=3"
 )
 
 REQUEST_TIMEOUT = 15
